@@ -162,9 +162,16 @@ static void (*bartabmonfns[])(Monitor *) = { NULL /* , customlayoutfn */ };
 #if BAR_PANGO_PATCH
 static const char font[]                 = "monospace 10";
 #else
-static const char *fonts[]               = { "monospace:size=10" };
+static const char *fonts[]               = {
+	"MesloLGS NF:style=Regular:size=12",
+	"FontAwesome:style=Regular:size=12",
+	"icomoon:style=Regular:size=12",
+	"Pomodoro:style=Regular:size=12",
+	"octicons:style=Medium:size=12",
+	"monospace:size=12"
+};
 #endif // BAR_PANGO_PATCH
-static const char dmenufont[]            = "monospace:size=10";
+static const char dmenufont[]            = "MesloLGS NF:size=12";
 
 static char c000000[]                    = "#000000"; // placeholder value
 
